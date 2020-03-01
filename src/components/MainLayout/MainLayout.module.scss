@@ -1,0 +1,23 @@
+@import '../../style/resize.scss';
+.mianLayout{
+  width: 100%;
+  height: 100%;
+  .nav{
+    height: s(57.95);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .navItem{
+      height: 100%;
+      a{
+        display: block;
+        color: #999;
+        font-size: s(13);
+      }
+    }
+  }
+}

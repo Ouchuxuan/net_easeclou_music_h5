@@ -1,9 +1,9 @@
 import React from 'react';
 
-const mine = () => {
+const Mine = () => {
   return (
     <div>我的页面</div>
   )
 }
 
-export default mine;
+export default Mine;
