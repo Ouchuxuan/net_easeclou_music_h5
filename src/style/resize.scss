@@ -1,0 +1,6 @@
+ //sass转换
+ $UE-width:414;
+
+ @function s($size) {
+   @return (($size/($UE-width/10))*1rem);
+ }
