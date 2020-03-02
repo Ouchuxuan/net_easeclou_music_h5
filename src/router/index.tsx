@@ -10,7 +10,7 @@ const AppContainer = () => {
     <Router>
       <div className={styles.appContainer}>
         <Switch>
-        <Route path='/search' component={Search} exact={true}/>
+          <Route path='/search' component={Search} exact={true}/>
           <Route path='/' component={MainLayout}/>
         </Switch>
       </div>
