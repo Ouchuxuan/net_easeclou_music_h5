@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './router.module.scss';
-import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, } from 'react-router-dom';
 
 import Search from '../components/Search';
 import MainLayout from '../components/MainLayout';

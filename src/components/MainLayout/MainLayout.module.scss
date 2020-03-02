@@ -38,9 +38,10 @@
       }
 
       .menu {
-        width: s(16);
-        height: s(16);
-        background: url('');
+        width: s(24);
+        height: s(24);
+        background: url('~assets/images/menu.png') center no-repeat;
+        background-size: contain;
       }
     }
   }
