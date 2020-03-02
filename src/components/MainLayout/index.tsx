@@ -6,6 +6,9 @@ import Friends from '../Friends';
 import Mine from '../Mine';
 import Video from '../Video';
 import { Icon, Drawer} from 'antd-mobile';
+
+
+
 const DrawerSideBar = 'aaa';
 const MainLayout: React.FC = () => {
   const Height = document.documentElement.clientHeight;
