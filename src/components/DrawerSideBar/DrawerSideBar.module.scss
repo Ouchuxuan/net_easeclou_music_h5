@@ -1,4 +1,36 @@
+@import '../../style/resize.scss';
 .DrawerSideBarLayout{
   background-color: #fff;
   height: auto;
+  .loginTag{
+    height: s(174);
+    background-color:hsla(0,0%,80%,.3);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    .tagMessage{
+      padding-top: s(34);
+      p{
+        font-size: s(12);
+        color: rgba(0,0,0,.4);
+        text-align: center;
+        line-height: s(18);
+      }
+    }
+    .loginButton{
+      display: block;
+      background-color:transparent;
+      font-size: s(12);
+      text-align: center;
+      color:rgba(0, 0, 0, 0.4);
+      width: s(108);
+      height: s(31.5);
+      line-height: s(31.5);
+      border-radius: s(31.5) * 0.5;
+      border: 1px solid rgba(0,0,0,.4);
+      box-sizing: border-box;
+      margin-top: s(16);
+    }
+  }
 }

@@ -1,17 +1,19 @@
 import React from "react";
 import styles from './router.module.scss';
+import Loadable from '../utils/loadable';
 import { HashRouter as Router, Switch, Route, } from 'react-router-dom';
 
-import Search from '../components/Search';
 import MainLayout from '../components/MainLayout';
-
+const Search = Loadable(() => import('../components/MainLayout'));
+const Login = Loadable(()=> import('../components/Login'))
 const AppContainer = () => {
   return (
     <Router>
-      <div className={styles.appContainer}>
+      <div className={styles.appContainer} >
         <Switch>
-          <Route path='/search' component={Search} exact={true}/>
-          <Route path='/' component={MainLayout}/>
+          <Route path='/search' component={Search} exact={true} />
+          <Route path='/login' component={Login} exact={true} />
+          <Route path='/' component={MainLayout} />
         </Switch>
       </div>
     </Router>
