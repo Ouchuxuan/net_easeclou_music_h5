@@ -4,4 +4,43 @@
   width: 100%;
   height: 100%;
   background-color: #fff;
+  .mainLayout{
+    box-sizing: border-box;
+    padding: s(14);
+    :global{
+      .am-list-body{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: #333;
+        &::before{
+          content: '';
+          display: block;
+          height: 0 !important;
+        }
+      }
+      .am-input-item{
+        width: 90%;
+      }
+    }
+   
+  }
+  .loginNote{
+    font-size: s(13);
+    color: #ccc;
+    height: s(116);
+    line-height: s(116);
+    padding-left: s(14);
+  }
+  .nextStep{
+    color: #fff;
+    text-align: center;
+    width: s(288);
+    height: s(36);
+    line-height: s(36);
+    background-color: $mainTheme;
+    margin: 0 auto;
+    margin-top: s(30);
+    border-radius: s(15);
+  }
 }
