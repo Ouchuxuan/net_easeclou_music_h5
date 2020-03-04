@@ -1,10 +1,22 @@
 @import '../../style/resize.scss';
 @import '../../style/variable.scss';
-.loginLayout{
+
+.loginLayout {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $mainTheme;
-  .className{
-    
+
+  .linkButton {
+    display: block;
+    width: s(307);
+    height: s(46);
+    border-radius: s(23);
+    background-color: #fff;
+    line-height: s(46);
+    text-align: center;
+    color: #dd001b;
   }
 }

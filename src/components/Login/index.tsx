@@ -4,7 +4,9 @@ import styles from './login.module.scss';
 
 const Login: React.FC = () => {
   return (
-    <div className={styles.loginLayout}> <Link to='/login_by_phone' className="LoginLayout">手机号登录</Link></div>
+    <div className={styles.loginLayout}>
+      <Link to='/login_by_phone' className={styles.linkButton}>手机号登录</Link>
+    </div>
   )
 }
 
