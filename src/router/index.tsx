@@ -3,10 +3,10 @@ import styles from './router.module.scss';
 import Loadable from '../utils/loadable';
 import { HashRouter as Router, Switch, Route, } from 'react-router-dom';
 
-import MainLayout from '../components/MainLayout';
-const Search = Loadable(() => import('../components/MainLayout'));
-const Login = Loadable(()=> import('../components/Login'));
-const LoginByPhone = Loadable(() => import('../components/LoginByPhone'));
+import MainLayout from '../containers/MainLayout';
+const Search = Loadable(() => import('../containers/MainLayout'));
+const Login = Loadable(()=> import('../containers/Login'));
+const LoginByPhone = Loadable(() => import('../containers/LoginByPhone'));
 const AppContainer = () => {
   return (
     <Router>

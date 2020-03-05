@@ -1,19 +1,23 @@
 import React, { useState, useCallback } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 import styles from './LoginByPhone.module.scss';
-import { NavBar, Icon, InputItem, List } from 'antd-mobile';
+import { NavBar, Icon, InputItem, List, Toast } from 'antd-mobile';
+import { checkMobileIsUseful } from '../../api/user';
 
 const LoginByPhone: React.FC<RouteComponentProps> = (props) => {
   type phoneNum = string
   const [phoneNum, setPhoneNum] = useState<phoneNum>('');
   const submit = useCallback(
-    () => {
-      if (!(/^1[3456789]\d{9}$/.test(phoneNum))) {
-        alert("手机号码有误，请重填");
+    async () => {
+      console.log(Object.prototype.toString.call(phoneNum), phoneNum.trim())
+      if (!(/^1[3456789]\d{9}$/.test(phoneNum.replace(/\s/g, '')))) {
+        Toast.info("手机号码有误，请重填")
       } else {
+        // 检测手机号是否可用
+        const result = await checkMobileIsUseful(Number(phoneNum.toString().replace(/\s/g,'')))
+        console.log(result)
         props.history.push('/')
       }
-
     },
     [phoneNum,props.history],
   )
