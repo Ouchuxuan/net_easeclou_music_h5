@@ -19,6 +19,9 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "typescript": "~3.7.2"
   },
@@ -45,6 +48,8 @@
   },
   "devDependencies": {
     "@types/react-loadable": "^5.5.3",
+    "@types/react-redux": "^7.1.7",
+    "@types/redux-logger": "^3.0.7",
     "babel-plugin-import": "^1.13.0",
     "customize-cra": "^0.9.1",
     "node-sass": "^4.13.1",

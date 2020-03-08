@@ -3,6 +3,8 @@ import { RouteComponentProps } from 'react-router-dom';
 import styles from './LoginByPhone.module.scss';
 import { NavBar, Icon, InputItem, List, Toast } from 'antd-mobile';
 import { checkMobileIsUseful } from '../../api/user';
+import { connect } from 'react-redux';
+
 
 const LoginByPhone: React.FC<RouteComponentProps> = (props) => {
   type phoneNum = string
@@ -37,6 +39,10 @@ const LoginByPhone: React.FC<RouteComponentProps> = (props) => {
       </div>
     </div>
   )
+}
+
+const mapStateToProps = state:reduxState => {
+
 }
 
 export default LoginByPhone;
